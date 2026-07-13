@@ -1,28 +1,25 @@
 #include <iostream>
 #include <windows.h>
+#include "menu-r.h"
 using namespace std;
 int main(){
 	int op;
 	SetConsoleOutputCP(CP_UTF8);
 	do{
-		cout<<"╔═════════════════════════════════════════╗"<<endl;
-		cout<<"║              MENU PRINCIPAL             ║"<<endl;
-		cout<<"╠═════════════════════════════════════════╣"<<endl;
-		cout<<"║ 1.- Registro de ventas.                 ║"<<endl;
-		cout<<"║ 2.- Solicitar un restock.               ║"<<endl;
-		cout<<"║ 3.- Salir del programa.                 ║"<<endl;
-		cout<<"╚═════════════════════════════════════════╝"<<endl;
+		cout<<"╔═══════════════════════════════════════════╗"<<endl;
+		cout<<"║               MENU PRINCIPAL              ║"<<endl;
+		cout<<"╠═══════════════════════════════════════════╣"<<endl;
+		cout<<"║ 1.- Registro de ventas.                   ║"<<endl;
+		cout<<"║ 2.- Solicitar un restock.                 ║"<<endl;
+		cout<<"║ 3.- Salir del programa.                   ║"<<endl;
+		cout<<"╚═══════════════════════════════════════════╝"<<endl;
 		cout<<"\nEliga una opcion: ";
 		cin>>op;
 		system("cls");
 		
 		switch(op){
 			case 1:
-				cout<<"╔═════════════════════════════════════════╗"<<endl;
-				cout<<"║          Ejecutando caso 1...           ║"<<endl;
-				cout<<"╚═════════════════════════════════════════╝"<<endl;
-				system("pause");
-				system("cls");
+				menu();
 				break;
 			case 2:
 				cout<<"╔═════════════════════════════════════════╗"<<endl;
@@ -39,6 +36,10 @@ int main(){
 				system("cls");
 				break;
 			default:
+				cout<<"╔═════════════════════════════════════════╗"<<endl;
+				cout<<"║            Opcion invalida...           ║"<<endl;
+				cout<<"╚═════════════════════════════════════════╝"<<endl;
+				system("pause");
 				system("cls");
 				break;
 		}
