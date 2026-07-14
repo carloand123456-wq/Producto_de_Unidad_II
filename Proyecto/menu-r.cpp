@@ -1,9 +1,10 @@
 #include <iostream>
 #include <windows.h>
+#include "funciones_r.h"
 #include "menu-r.h"
 using namespace std;
 
-void menu(){
+void menu(Productos PT[], int &cantProductos, Venta VT[], int &cantVentas){
 	SetConsoleOutputCP(CP_UTF8);
 	int op2;
 	do{
@@ -21,18 +22,10 @@ void menu(){
 		
 		switch(op2){
 			case 1:
-				cout<<"╔═══════════════════════════════════════════╗"<<endl;
-				cout<<"║            Ejecutando caso 1...           ║"<<endl;
-				cout<<"╚═══════════════════════════════════════════╝"<<endl;
-				system("pause");
-				system("cls");
+				venta_nueva(PT, cantProductos, VT, cantVentas);
 				break;
 			case 2:
-				cout<<"╔═══════════════════════════════════════════╗"<<endl;
-				cout<<"║            Ejecutando caso 2...           ║"<<endl;
-				cout<<"╚═══════════════════════════════════════════╝"<<endl;
-				system("pause");
-				system("cls");
+				listar_ventas(VT, cantVentas);
 				break;
 			case 3:
 				cout<<"╔═══════════════════════════════════════════╗"<<endl;
@@ -62,7 +55,7 @@ void menu(){
 }
 
 
-void menu3(){
+void menu3(Productos PT[], int cantProductos){
 	SetConsoleOutputCP(CP_UTF8);
 	int op3;
 	do{
@@ -121,7 +114,7 @@ void menu3(){
 }
 
 
-void menu2(){
+void menu2(Productos PT[], int &cantProductos){
 	SetConsoleOutputCP(CP_UTF8);
 	int op4;
 	do{
