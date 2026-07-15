@@ -2,6 +2,7 @@
 #include <string>
 #include <windows.h>
 #include "funciones_r.h"
+#include "funciones_i.h"
 #include "menu-r.h"
 using namespace std;
 
