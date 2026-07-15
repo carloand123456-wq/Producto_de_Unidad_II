@@ -1,6 +1,7 @@
 #include <iostream>
 #include <windows.h>
 #include "funciones_r.h"
+#include "funciones_i.h"
 #include "menu-r.h"
 using namespace std;
 
@@ -73,25 +74,13 @@ void menu3(Productos PT[], int cantProductos){
 		
 		switch(op3){
 			case 1:
-				cout<<"╔═══════════════════════════════════════════╗"<<endl;
-				cout<<"║            Ejecutando caso 1...           ║"<<endl;
-				cout<<"╚═══════════════════════════════════════════╝"<<endl;
-				system("pause");
-				system("cls");
+				mostrar_inventario(PT, cantProductos);
 				break;
 			case 2:
-				cout<<"╔═══════════════════════════════════════════╗"<<endl;
-				cout<<"║            Ejecutando caso 2...           ║"<<endl;
-				cout<<"╚═══════════════════════════════════════════╝"<<endl;
-				system("pause");
-				system("cls");
+				buscar_por_codigo(PT, cantProductos);
 				break;
 			case 3:
-				cout<<"╔═══════════════════════════════════════════╗"<<endl;
-				cout<<"║            Ejecutando caso 3...           ║"<<endl;
-				cout<<"╚═══════════════════════════════════════════╝"<<endl;
-				system("pause");
-				system("cls");
+				reporte_bajo_stock(PT, cantProductos);
 				break;
 			case 0:
 				cout<<"╔═══════════════════════════════════════════╗"<<endl;
