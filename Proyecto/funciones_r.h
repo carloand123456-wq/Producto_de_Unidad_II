@@ -18,5 +18,6 @@ struct Venta{
 
 void venta_nueva(Productos PT[], int &cantProductos, Venta VT[], int &cantVentas);
 void listar_ventas(Venta VT[], int cantVentas);
+void editar_venta(Productos PT[], int cantProductos, Venta VT[], int cantVentas);
 
 #endif
