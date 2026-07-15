@@ -3,6 +3,8 @@
 #include "funciones_r.h"
 #include "funciones_i.h"
 #include "menu-r.h"
+#include "funciones_g.h"
+
 using namespace std;
 
 void menu(Productos PT[], int &cantProductos, Venta VT[], int &cantVentas){
@@ -121,34 +123,23 @@ void menu2(Productos PT[], int &cantProductos){
 		system("cls");
 		
 		switch(op4){
+
 			case 1:
-				cout<<"╔═══════════════════════════════════════════╗"<<endl;
-				cout<<"║            Ejecutando caso 1...           ║"<<endl;
-				cout<<"╚═══════════════════════════════════════════╝"<<endl;
-				system("pause");
-				system("cls");
+				registrar_producto(PT, cantProductos);
 				break;
+				
 			case 2:
-				cout<<"╔═══════════════════════════════════════════╗"<<endl;
-				cout<<"║            Ejecutando caso 2...           ║"<<endl;
-				cout<<"╚═══════════════════════════════════════════╝"<<endl;
-				system("pause");
-				system("cls");
+				reabastecer_stock(PT, cantProductos);
 				break;
+
 			case 3:
-				cout<<"╔═══════════════════════════════════════════╗"<<endl;
-				cout<<"║            Ejecutando caso 3...           ║"<<endl;
-				cout<<"╚═══════════════════════════════════════════╝"<<endl;
-				system("pause");
-				system("cls");
+				modificar_precio(PT, cantProductos);
 				break;
+
 			case 4:
-				cout<<"╔═══════════════════════════════════════════╗"<<endl;
-				cout<<"║            Ejecutando caso 4...           ║"<<endl;
-				cout<<"╚═══════════════════════════════════════════╝"<<endl;
-				system("pause");
-				system("cls");
+				eliminar_producto(PT, cantProductos);
 				break;
+
 			case 0:
 				cout<<"╔═══════════════════════════════════════════╗"<<endl;
 				cout<<"║       Volviendo al menu principal...      ║"<<endl;
@@ -156,6 +147,7 @@ void menu2(Productos PT[], int &cantProductos){
 				system("pause");
 				system("cls");
 				break;
+
 			default:
 				cout<<"╔═════════════════════════════════════════╗"<<endl;
 				cout<<"║            Opcion invalida...           ║"<<endl;
