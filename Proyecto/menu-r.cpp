@@ -29,11 +29,7 @@ void menu(Productos PT[], int &cantProductos, Venta VT[], int &cantVentas){
 				listar_ventas(VT, cantVentas);
 				break;
 			case 3:
-				cout<<"╔═══════════════════════════════════════════╗"<<endl;
-				cout<<"║            Ejecutando caso 3...           ║"<<endl;
-				cout<<"╚═══════════════════════════════════════════╝"<<endl;
-				system("pause");
-				system("cls");
+				editar_venta(PT, cantProductos, VT, cantVentas);
 				break;
 			case 0:
 				cout<<"╔═══════════════════════════════════════════╗"<<endl;
