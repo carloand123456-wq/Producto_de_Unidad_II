@@ -55,7 +55,7 @@ void listar_ventas(Venta VT[], int cantVentas) {
         cout<<" No se han registrado ventas aún." << endl;
     } else {
         for (int i = 0; i < cantVentas; i++) {
-            cout << " Venta #" << i + 1 << " | Prod: " << VT[i].codigoProducto << " | Cant: " << VT[i].cantVendida << " | Total: $" << VT[i].precioTotal << endl;
+            cout << " Venta #" << i + 1 << " | Prod: " << VT[i].codigoProducto << " | Cant: " << VT[i].cantVendida << " | Total: S/." << VT[i].precioTotal << endl;
         }
     }
     system("pause");
